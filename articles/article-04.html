@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link rel="icon" href="../assets/favicon.ico">
+        <title>Jordan Nguyen</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../styles/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/bootstrap-icons.css">
+    </head>
+    
+    <body style="background-color: #111; font-family: 'Open Sans', sans-serif;">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md container-fluid" style="background-color: #111; font-family: 'Open Sans', sans-serif;">
+        <a class="navbar-brand" style="color: #a0e9ff" href="../index.html">
+            <i class="bi bi-house" ></i> Home
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-options">
+            <i class="navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-options">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" style="color: #a0e9ff" href="../projects.html">
+                    <i class="bi bi-code-slash"></i> Projects
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #a0e9ff" href="../blog.html">
+                    <i class="bi bi-chat-dots"></i> Blog
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #a0e9ff" href="../about.html">
+                    <i class="bi bi-person"></i> About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #a0e9ff" href="../contact.html">
+                    <i class="bi bi-code-envelope"></i> Contact
+                </a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    
+        <div class='container'>
+            <h1 class='d-flex display-2 mt-4 justify-content-center' style="color: #f093b0;"> Canvas Aim Trainer </h1>
+            <br>
+            <p class="d-flex justify-content-center" style="color: #a0e9ff;">
+                This browser app acts as an aim trainer.
+            </p>
+            <br>
+            <p class="d-flex justify-content-center" style="color: #a0e9ff;">
+                This project utilizes canvas to implement an aim trainer. Canvas with HTML and JavaScript makes it easy to implement graphical applications on your browser. In this case, I can easily create a dynamic game that utilizes different views that change with the defined controls (mouse events such as clicking or pressing the escape key in this application). The aim trainer is separated into two different modes: menu and game. The trainer starts in menu mode where it tells the user to click in the middle of the screen. Once the user clicks the middle of the screen, the trainer will switch to game mode where targets remaining and number of missclicks will be displayed and three targets will always be displayed. The user will click on these targets until user hits thirty targets. Once the user hits thirty targets, the number of targets hit, accuracy, missclicks, and average time between clicks will be displayed. Accuracy is determined by the number of targets hit (30) and number of missclicks. The average time between clicks is determined by recording the animation frame time of a click, taking the different times between each click, taking the sum of the differences, and dividing by how many of these differences there are. Targets are drawn using canvas, and a helper random function that will determine where the targets are drawn randomly. The canvas is viewed and updated in the browser using the requestAnimationFrame method, and this is key in finding the time between clicks. Pressing the escape key will send the user back to menu view. 
+            </p>
+        </div>
+
+        <!--  Bootstrap Bundle with Popper -->
+        <script src="../scripts/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

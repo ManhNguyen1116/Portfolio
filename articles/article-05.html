@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="icon" href="../assets/favicon.ico">
+        <title>Jordan Nguyen</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../styles/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/bootstrap-icons.css">
+    </head>
+    
+    <body style="background-color: #111; font-family: 'Open Sans', sans-serif;">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md container-fluid" style="background-color: #111; font-family: 'Open Sans', sans-serif;">
+        <a class="navbar-brand" style="color: #a0e9ff" href="../index.html">
+            <i class="bi bi-house" ></i> Home
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-options">
+            <i class="navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-options">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" style="color: #a0e9ff" href="../projects.html">
+                    <i class="bi bi-code-slash"></i> Projects
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #a0e9ff" href="../blog.html">
+                    <i class="bi bi-chat-dots"></i> Blog
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #a0e9ff" href="../about.html">
+                    <i class="bi bi-person"></i> About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #a0e9ff" href="../contact.html">
+                    <i class="bi bi-code-envelope"></i> Contact
+                </a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    
+        <div class='container'>
+            <h1 class='d-flex display-2 mt-4 justify-content-center' style="color: #f093b0;"> Canvas Aim Trainer with Leaderboard </h1>
+            <br>
+            <p class="d-flex justify-content-center" style="color: #a0e9ff;">
+                This browser app mainly uses the same logic as my aim trainer app, but the logic in this one has a new mode called end. This mode removes the event listeners for controls so that the user can not change their score in any way. Also, the accuracy and time between clicks variables are instantiated under state. This makes it so that these variables can be used to implement the leaderboard. For the leaderboard, lower time between clicks = better since it means that one score is faster than the other. The leaderboard displays the top 5 times using the module design pattern. 
+            </p>
+        </div>
+
+        <!--  Bootstrap Bundle with Popper -->
+        <script src="../scripts/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
